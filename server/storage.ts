@@ -6,7 +6,7 @@ import {
   bots, trades, logs, backtests, forumCategories, forumTopics, forumPosts,
   pendingOrders, gridConfigs, portfolioAllocations, rebalanceSchedules
 } from "@shared/schema";
-import { db } from "./db";
+import { db } from "./db.ts";
 import { eq, desc, asc, sql, and } from "drizzle-orm";
 
 export interface IStorage {
