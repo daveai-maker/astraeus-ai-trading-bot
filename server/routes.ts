@@ -1,8 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
-import { TradingEngine } from "./engine";
-import { backtestEngine } from "./backtest";
+import { storage } from "./storage.ts"
+import { TradingEngine } from "./engine.ts"
+import { backtestEngine } from "./backtest.ts";
 import ccxt from "ccxt";
 import OpenAI from "openai";
 import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
