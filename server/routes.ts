@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage.ts"
 import { TradingEngine } from "./engine.ts"
-import { backtestEngine } from "./backtest.ts";
+//import { backtestEngine } from "./backtest.ts";
 import ccxt from "ccxt";
 import OpenAI from "openai";
 import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
@@ -63,7 +63,7 @@ export async function registerRoutes(
   });
 
   app.get("/api/bot/:id", isAuthenticated, async (req: any, res) => {
-    const bot = await verifyBotOwnership(req, res, parseInt(req.params.id));
+   // const bot = await verifyBotOwnership(req, res, parseInt(req.params.id));
     if (!bot) return;
     res.json(bot);
   });
