@@ -1,6 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
-import { serveStatic } from "./static";
+import { serveStatic } from "./static.ts";
 import { createServer } from "http";
 import { TradingEngine } from "./engine";
 import { storage } from "./storage";
