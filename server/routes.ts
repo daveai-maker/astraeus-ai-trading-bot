@@ -5,7 +5,7 @@ import { TradingEngine } from "./engine.ts"
 //import { backtestEngine } from "./backtest.ts";
 import ccxt from "ccxt";
 import OpenAI from "openai";
-import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
+//import { setupAuth, registerAuthRoutes, isAuthenticated } from "./replit_integrations/auth";
 import { getGitHubUser, createRepo, getRepo, pushFile, getFileContent } from "./github";
 import * as fs from "fs";
 import * as path from "path";
